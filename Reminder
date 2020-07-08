@@ -1,0 +1,98 @@
+#source 
+$ source_Kulin
+
+cd Kulin_ws/src/
+
+
+#If you have done launch file by yourself:
+$ roslaunch package_name launch_file_name.launch
+#If not done yet:
+# rosrun package_name file_name.py
+
+
+
+-----------------------------------------------------------------------------
+#Call action_editor:
+$ roslaunch op3_action_editor op3_action_editor.launch 
+
+#The file will save at >> /ROBOTIS-OP3/op3_actiion_module/data/motion_4095.bin
+-----------------------------------------------------------------------------
+#Call walking_param:
+$ roslaunch op3_gui_demo op3_demo.launch 
+
+#The file will save at >> /ROBOTIS-OP3/op3_walking_module/config/param.yaml
+#You have to copy this file to your own package >> package_name/config/
+#And you cab change the file name, and change the path in /op3_utils/src/op3_utils/op3_utils.py
+
+# robot.walking_params.append(robot.loadWalkingParams(#config_file))
+# robot.walk_set_param_pub.publish(robot.walking_params[0])
+# robot.walking_params[0].x_move_amplitude = 0.01
+        
+        
+        
+        
+---------------------------------------------------------------------------------
+#Initial Pose
+
+    x_offset: -0.01
+    y_offset: 0.027
+    z_offset: 0.035
+
+    roll_offset: 5
+    pitch_offset: 0
+    yaw_offset: 0
+    hip_pitch_offset: 12.0
+
+#Walking Parameter
+
+    period_time: 600
+    dsp_ratio: 0.2
+    step_forward_back_ratio: 0.28
+
+    foot_height: 0.041
+    # Z Move Amplitude
+
+#Balance Control
+
+    balance_hip_roll_gain: 0.5
+    balance_knee_gain: 0.2
+    balance_ankle_roll_gain: 0.35
+    balance_ankle_pitch_gain: 0.35
+
+    
+    swing_right_left: 0.025
+    #Y Swap Amplitude
+    
+    swing_top_down: 0.006
+    #Z Swap Amplitude
+
+    arm_swing_gain: 0.8
+    pelvis_offset: 1
+
+x_offset: -0.02
+y_offset: 0.015
+z_offset: 0.035
+roll_offset: 0
+pitch_offset: 0
+yaw_offset: 0
+hip_pitch_offset: 1.999999984507266
+period_time: 650
+dsp_ratio: 0.2
+step_forward_back_ratio: 0.28
+foot_height: 0.06
+swing_right_left: 0.028
+swing_top_down: 0.006
+pelvis_offset: 0.4999999961268166
+arm_swing_gain: 0.2
+balance_hip_roll_gain: 0.35
+balance_knee_gain: 0.3
+balance_ankle_roll_gain: 0.7
+balance_ankle_pitch_gain: 0.9
+p_gain: 0
+i_gain: 0
+d_gain: 0
+
+lenth >> m
+walking velcties >> mm
+
+

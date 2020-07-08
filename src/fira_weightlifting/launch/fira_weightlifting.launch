@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    
+    <!-- robotis op3 manager (ver. fira)-->
+    <include file="$(find op3_manager)/launch/op3_manager_fira.launch"/>
+
+	<node pkg="fira_weightlifting" type="fira_weightlifting.py" name="fira_weightlifting" output="screen">
+	</node>
+
+</launch>
+

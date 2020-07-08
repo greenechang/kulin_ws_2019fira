@@ -1,0 +1,8 @@
+prefix=/home/robotis/Kulin_ws/install
+
+Name: fira_WeightLifting
+Description: Description of fira_WeightLifting
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robotis/Kulin_ws/install/lib 
+Requires: 

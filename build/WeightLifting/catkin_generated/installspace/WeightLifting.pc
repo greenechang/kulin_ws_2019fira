@@ -1,0 +1,8 @@
+prefix=/home/robotis/Kulin_ws/install
+
+Name: WeightLifting
+Description: Description of WeightLifting
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robotis/Kulin_ws/install/lib 
+Requires: 

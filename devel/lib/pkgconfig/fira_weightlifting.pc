@@ -1,0 +1,8 @@
+prefix=/home/robotis/Kulin_ws/devel
+
+Name: fira_weightlifting
+Description: Description of fira_weightlifting
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robotis/Kulin_ws/devel/lib 
+Requires: 
